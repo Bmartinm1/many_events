@@ -17,7 +17,7 @@ function EventItem(props) {
 				</div>
 				<div className={classes.content}>
 					<h3>{props.title}</h3>
-					<address>{props.address}</address>
+					{/* <address>{props.address}</address> */}
 				</div>
 				<div className={classes.actions}>
 					<button onClick={showDetailsHandler}>Show Details</button>

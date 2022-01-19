@@ -3,7 +3,6 @@ import { MongoClient } from 'mongodb';
 
 import EventList from '../components/events/EventList';
 
-
 function EventsPage(props) {
   return (
 		<Fragment>
@@ -13,7 +12,7 @@ function EventsPage(props) {
 			<div className='section-links'>
 				<ul>
 					<li>
-						<a href='manyworldscoin.com'>Home</a>
+						<a href='https://www.manyworldstoken.com'>Home</a>
 					</li>
 					<li>
 						<a href='dApp'>dApp</a>
@@ -47,7 +46,6 @@ export async function getStaticProps() {
 			events: events.map((event) => ({
 				title: event.title,
 				image: event.image,
-				address: event.address,
 				id: event._id.toString(),
 			})),
 		},
