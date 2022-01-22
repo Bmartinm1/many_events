@@ -8,10 +8,7 @@ function MainNav() {
 			<nav>
 				<ul>
 					<li>
-						<Link href='/events'>All Events</Link>
-					</li>
-					<li>
-						<Link href='/test/admin/addEvent'>Add New Event</Link>
+						<Link href='/enlist'>All Events</Link>
 					</li>
 				</ul>
 			</nav>
