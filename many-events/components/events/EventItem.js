@@ -5,8 +5,8 @@ import classes from './EventItem.module.css';
 function EventItem(props) {
   const router = useRouter();
 
-  function showDetailsHandler() {
-    router.push('/events/' + props.id);
+  function logTasksHandler() {
+    router.push('/rank-select/');
   }
 
 	return (
@@ -17,10 +17,9 @@ function EventItem(props) {
 				</div>
 				<div className={classes.content}>
 					<h3>{props.title}</h3>
-					{/* <address>{props.address}</address> */}
 				</div>
 				<div className={classes.actions}>
-					<button onClick={showDetailsHandler}>Show Details</button>
+					<button onClick={logTasksHandler}>Log a task</button>
 				</div>
 			</Card>
 		</li>
