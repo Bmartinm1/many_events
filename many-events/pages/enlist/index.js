@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 
-import EnlistForm from '../components/users/EnlistForm';
+import EnlistForm from '../../components/users/EnlistForm';
 
 function EnlistPage() {
 	const router = useRouter();
@@ -18,7 +18,7 @@ function EnlistPage() {
 		console.log(enteredUserData);
 		console.log(data);
 
-		router.push('/login');
+		router.push('/');
 	}
 
 	return <EnlistForm onAddUser={addUserHandler} />;

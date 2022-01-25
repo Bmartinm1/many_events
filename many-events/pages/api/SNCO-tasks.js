@@ -1,24 +1,24 @@
 import { MongoClient } from 'mongodb';
 
-async function userHandler(req, res) {
+async function taskHandler(req, res) {
 	if (req.method === 'POST') {
 		const data = req.body;
 
-		const { name, email, walletAddress, discord, referredDiscord, socialMedia, respoCheck } = data;
+		const {  } = data;
 
 		const client = await MongoClient.connect(
 			'mongodb+srv://ben_m_squared:Thetrinity1@cluster0.fwv4v.mongodb.net/usersDatabase?retryWrites=true&w=majority'
 		);
 		const db = client.db();
 
-		const usersCollection = db.collection('usersCollection');
+		const usersCollection = db.collection('SNCOTasksCollection');
 
 		const result = await usersCollection.insertOne(data);
-    
+
 		client.close();
 
-		res.status(201).json({ message: 'Successfully enlisted!' });
+		res.status(201).json({ message: 'Successfully entered!' });
 	}
 }
 
-export default userHandler;
+export default handler;

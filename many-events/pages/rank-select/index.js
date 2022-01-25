@@ -1,17 +1,15 @@
-import { Link } from 'next';
-
 function RankSelect() {
   return (
 		<div>
 			<h1>Please select your rank:</h1>
 			<div>
-				<button href='/pages/rank-select/tasks-daily/sNCO-daily.js'>SNCO</button>
+				<a href='/SNCO'>SNCO</a>
 			</div>
 			<div>
-				<button href='/pages/rank-select/tasks-daily/NCO-daily.js'>NCO</button>
+				<a href='/NCO'>NCO</a>
 			</div>
 			<div>
-				<button href='/pages/rank-select/tasks-daily/JE-daily.js'>Jr Enlisted</button>
+				<a href='/JE'>Jr Enlisted</a>
 			</div>
 		</div>
 	);
