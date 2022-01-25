@@ -4,21 +4,15 @@ function RankSelect() {
   return (
 		<div>
 			<h1>Please select your rank:</h1>
-			<ul>
-				<li href='localhost:3000/pages/rank-select/tasks-daily/SNCO-daily.js'>
-					SNCO
-				</li>
-			</ul>
-			<ul>
-				<li href='localhost:3000pages/rank-select/tasks-daily/NCO-daily.js'>
-					NCO
-				</li>
-			</ul>
-			<ul>
-				<li href='localhost:3000/pages/rank-select/tasks-daily/JE-daily.js'>
-					Junior Enlisted
-				</li>
-			</ul>
+			<div>
+				<button href='/pages/rank-select/tasks-daily/sNCO-daily.js'>SNCO</button>
+			</div>
+			<div>
+				<button href='/pages/rank-select/tasks-daily/NCO-daily.js'>NCO</button>
+			</div>
+			<div>
+				<button href='/pages/rank-select/tasks-daily/JE-daily.js'>Jr Enlisted</button>
+			</div>
 		</div>
 	);
 }
