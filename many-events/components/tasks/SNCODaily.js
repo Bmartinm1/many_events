@@ -9,6 +9,7 @@ function SNCODailyForm(props) {
 	const unitLeadDiscordInputRef = useRef();
 	const raidCheckInputRef = useRef();
 	const marketingReqCheckInputRef = useRef();
+	const ncoCheckInputRef = useRef();
 	const engageCheckInputRef = useRef();
 	const recruitCheckInputRef = useRef();
 	const recruitDiscordInputRef = useRef();
@@ -30,6 +31,7 @@ function SNCODailyForm(props) {
 		const enteredUnitLeadDiscord = unitLeadDiscordInputRef.current.value;
 		const enteredRaidCheck = raidCheckInputRef.current.value;
 		const enteredMarketingReqCheck = marketingReqCheckInputRef.current.value;
+		const enteredNCOCheck = ncoCheckInputRef.current.value;
 		const enteredEngageCheck = engageCheckInputRef.current.value;
 		const enteredRecruitCheck = recruitCheckInputRef.current.value;
 		const enteredRecruitDiscord = recruitDiscordInputRef.current.value;
@@ -49,6 +51,7 @@ function SNCODailyForm(props) {
 			unitLeadDiscord: enteredUnitLeadDiscord,
 			raidCheck: enteredRaidCheck,
 			marketingReqCheck: enteredMarketingReqCheck,
+			ncoCheck: enteredNCOCheck,
 			engageCheck: enteredEngageCheck,
 			recruitCheck: enteredRecruitCheck,
 			recruitDiscord: enteredRecruitDiscord,
@@ -70,16 +73,18 @@ function SNCODailyForm(props) {
 		<Card>
 			<form className={classes.form} onSubmit={submitHandler}>
 				<div>
-					<h1>NCO Muster</h1>
+					<h1>SNCO Muster</h1>
 					<h4>Required Duties:</h4>
 					<ol>
-						<li>Active engagement in general community, Bit Force channels</li>
+						<li>Two guided Raids per week</li>
 						<li>
-							Check in with Junior Enlisted on task completion and verify their
-							reporting
+							Sift through Marketing requests and offers to find the real ones
 						</li>
-						<li>Recruit 1 person per week</li>
-						<li>All duties of lower ranks</li>
+						<li>Check in with NCOs, update the content for the app</li>
+						<li>
+							All duties of lower ranks (except for NCO duty of checking in with
+							JE)
+						</li>
 					</ol>
 				</div>
 				<div className={classes.control}>
@@ -109,6 +114,14 @@ function SNCODailyForm(props) {
 						Did you review any potential marketing requests or offers today?
 					</label>
 					<input type='checkbox' ref={marketingReqCheckInputRef} />
+				</div>
+				<div className={classes.control}>
+					<label htmlFor='ncoCheck'>
+						Have you checked in with your NCOs regarding their JE's activity,
+						any updates that need to be made to the tracking, and any
+						meritorious behaviour?
+					</label>
+					<input type='checkbox' ref={ncoCheckInputRef} />
 				</div>
 				<div className={classes.control}>
 					<label htmlFor='engageCheck'>
