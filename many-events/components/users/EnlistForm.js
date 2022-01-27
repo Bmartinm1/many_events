@@ -76,8 +76,11 @@ function EnlistForm(props) {
 				</div>
 				<div className={classes.control}>
 					<label htmlFor='respoCheck'>
-						I understand the responsibilities expected of a Junior Enlisted
-						member of the Bit Force.
+						I understand the{' '}
+						<a href='https://drive.google.com/file/d/166rFIQtBA26ViLdwrvdIFdNbrr9dkw9i/view'>
+							responsibilities expected
+						</a>{' '}
+						of a Junior Enlisted member of the Bit Force.
 					</label>
 					<input
 						type='checkbox'

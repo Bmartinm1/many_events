@@ -4,7 +4,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #16171a;
+	background-color: #000000;
 	padding: 0 10%;
 }
 
@@ -24,6 +24,8 @@
 
 .header li {
 	margin-left: 3rem;
+	padding: 0.5rem 0.5rem;
+	border: 2px solid #50e3c2;
 }
 
 .header a {

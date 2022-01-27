@@ -63,7 +63,7 @@ function JEDailyForm(props) {
 							tweet mentioning @ManyWorldsToken if none available
 						</li>
 						<li>
-							Like, reply, and share Many Worlds on instagram, or create a new
+							Like, reply, and share Many Worlds on Instagram, or create a new
 							tweet mentioning @ManyWorlds.Token if none available
 						</li>
 						<li>
